@@ -9,7 +9,7 @@ void swap(int* Ar, int i, int j)
     Ar[j] = temp;
 }
 
-int* selection_Sort(int* Ar, int size)
+void selection_Sort(int* Ar, int size)
 {
     int i,j;
     int min, index;
