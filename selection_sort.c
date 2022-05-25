@@ -9,6 +9,14 @@ void swap(int* Ar, int i, int j)
     Ar[j] = temp;
 }
 
+void print_Array(int* Ar, int size)
+{
+    for (int i = 0; i < size; i++)
+    {
+        printf("%d ", Ar[i]);
+    }
+}
+
 void selection_Sort(int* Ar, int size)
 {
     int i,j;
@@ -40,16 +48,10 @@ int main()
 {
     int Ar[10] = {5,1,6,4,2,7,0,3,9,8};
     int size = 10;
-    for (int i = 0; i < size; i++)
-    {
-        printf("%d ",Ar[i]);
-    }
+    print_Array(Ar,size);
     printf("\n");
 
     selection_Sort(Ar,size);
-    for (int i = 0; i < size; i++)
-    {
-        printf("%d ",Ar[i]);
-    }
+    print_Array(Ar,size);
     printf("\n");
 }
